@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  min-width: 100%;
+  font-size: 62.5%;
+  overflow: hidden;
+  background-image: linear-gradient(to right, #fc5776, #6a5af9);
+  font-family: "Poppins", sans-serif;
+}
+
+.wrapper {
+  background: rgba(255, 255, 255, 0.4);
+  transform-style: preserve-3d;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+  max-width: 35rem;
+  width: 100%;
+  margin: 8rem auto;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  transition: 0.3s;
+  font-size: 18px;
+}
+
+.wrapper h1 {
+  text-align: center;
+}
+
+.times {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  margin-top: 2rem;
+}
+
+.times div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 7rem;
+  background: rgb(255, 255, 255);
+  border-radius: 0.5rem;
+  color: rgb(29, 29, 29);
+  padding: 1rem 2rem;
+  box-shadow: 0 15px 20px rgb(0 0 0 / 30%);
+}
+
+.number {
+  font-weight: 700;
+  font-size: 2rem;
+}
+.text {
+  font-weight: 500;
+}
+
+.btn {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  padding: 0 3rem;
+}
+
+.btn .btn {
+  border: none;
+  outline: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.2rem;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  background: #161616;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 0.2rem 1rem rgb(0 0 0 / 30%);
+  transition: 0.2s ease-out;
+}
+
+.btn .btn.disable {
+    opacity: 0.6;
+    pointer-events: none;
+    background-color: rgba(0,0,0,0);
+    border-color: #aaa;
+}
+
+.btn .btn:hover {
+  opacity: 0.6;
+}
+
+.start {
+
+}
+
+.btn .stop {
+  background: #d40101;
+  color: #fff;
+}
+.reset {
+}
+
+@media screen and (max-width:768px) {
+  html {
+      font-size: 82.5%;
+  }
+}
+@media screen and (max-width:460px) {
+  html {
+      font-size: 65%;
+  }
+}
